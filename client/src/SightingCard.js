@@ -12,9 +12,10 @@ const SightingCard = ({sighting, removeSighting, updateBirdSighting}) => {
         })};
 
     const handleUpdate = () => {
-        updateSighting(sighting._id).then(()=>{
-            updateBirdSighting(sighting._id);
-        })}
+        const payload = {"species":"Crow"}
+        updateSighting(sighting._id,payload);
+        updateBirdSighting(sighting._id)
+        }
 
 
     return (
