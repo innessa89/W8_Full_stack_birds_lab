@@ -17,6 +17,12 @@ export const postSighting = (payload) => {
 export const deleteSighting = (id) => {
     return fetch(baseURL + id, {
         method: 'DELETE'
-    })
+    }) 
+}
+
+export const updateSighting = (id) => {
+    return fetch(baseURL + id, {
+        method: 'PUT'
+    }) 
 }
 
